@@ -50,7 +50,7 @@ for(i in 2:n){
 }
 
 pdf('plot1.pdf')
-qplot(copyIntervalCritical$Var1, copyIntervalCritical$Freq,data=copyIntervalCritical,geom="bar")
+barplot(copyIntervalCritical$Freq,names = copyIntervalCritical$Var1, xlab= "Time intervals", ylab = "Number of ON commands", main ="Crtical Operarional intervals") 
 dev.off()
 
 
